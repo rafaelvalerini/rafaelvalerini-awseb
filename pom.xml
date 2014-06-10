@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.soaexpert</groupId>
-    <artifactId>servico-rest</artifactId>
+    <artifactId>rafaelvalerini-awseb</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <packaging>war</packaging>
@@ -212,7 +212,7 @@
                     <inherited>true</inherited>
                     <version>1.3.1</version>
                     <configuration>
-                        <applicationName>servico-rest</applicationName>
+                        <applicationName>rafaelvalerini-awseb</applicationName>
                         <useStagingDirectory>true</useStagingDirectory>
                     </configuration>
                 </plugin>
@@ -292,8 +292,8 @@
         <profile>
             <id>worker</id>
             <properties>
-                <beanstalk.environmentRef>servico-rest-worker</beanstalk.environmentRef>
-                <beanstalk.environmentName>servico-rest-worker</beanstalk.environmentName>
+                <beanstalk.environmentRef>rafaelvalerini-awseb-worker</beanstalk.environmentRef>
+                <beanstalk.environmentName>rafaelvalerini-awseb-worker</beanstalk.environmentName>
                 <beanstalk.environmentTierName>Worker</beanstalk.environmentTierName>
                 <beanstalk.sqsdHttpPath>/services/api/v1/sqsd</beanstalk.sqsdHttpPath>
             </properties>
